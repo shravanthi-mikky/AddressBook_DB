@@ -52,3 +52,18 @@ Select * from AddressBook order by FirstName ASC;
 Select * from AddressBook order by FirstName DESC;
 Select * from AddressBook where City = 'Old Alwal' order by LastName ASC;
 Select * from AddressBook where City = 'Temple Alwal' order by LastName ASC;
+
+-------UC9 - Add ContactType------------
+Alter table AddressBook add ContactType varchar(100);
+update AddressBook set ContactType='Friend' where LastName='Mallapuram';
+update AddressBook set ContactType='Family' where LastName='Pabboji';
+Select * from AddressBook;
+ 
+--------UC10-get count by ContactType---------------------
+select Count(ContactType) from AddressBook;
+
+-------UC11 - add same person to frnd and family---------
+
+Insert into AddressBook Values ('Sai','Pabboji','ABC Colony','Old Alwal','Telangana',500010,'9000000002','Sai@gmail.com','Family'),
+('Sai','Pabboji','ABC Colony','Old Alwal','Telangana',500010,'9000000002','Sai@gmail.com','Friend');
+Select * from AddressBook;
