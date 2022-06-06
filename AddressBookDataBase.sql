@@ -40,3 +40,9 @@ Delete From AddressBook where FirstName = 'abc';
 Select * from AddressBook where City ='Temple Alwal' or State ='Telangana';
 Select * from AddressBook where City ='Temple Alwal';
 Select * from AddressBook where City ='Old Alwal';
+
+-------UC7 - size of AddressBook using city or state----------
+
+select count(City) from AddressBook;
+select count(State) from AddressBook;
+
