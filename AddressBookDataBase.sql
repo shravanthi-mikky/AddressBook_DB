@@ -46,3 +46,9 @@ Select * from AddressBook where City ='Old Alwal';
 select count(City) from AddressBook;
 select count(State) from AddressBook;
 
+-------UC8 - Sort Contacts by name in alphabetical order-----
+
+Select * from AddressBook order by FirstName ASC;
+Select * from AddressBook order by FirstName DESC;
+Select * from AddressBook where City = 'Old Alwal' order by LastName ASC;
+Select * from AddressBook where City = 'Temple Alwal' order by LastName ASC;
