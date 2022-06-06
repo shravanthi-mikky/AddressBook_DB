@@ -23,3 +23,9 @@ Insert into AddressBook Values ('Bhagya','Mallapuram','ABC Colony','Temple Alwal
 Insert into AddressBook Values ('Santosh','Mallapuram','ABC Colony','Temple Alwal','Telangana',500010,'9000000004','Santoo@gmail.com');
 Insert into AddressBook Values ('Vihaan','Mallapuram','ABC Colony','Temple Alwal','Telangana',500010,'9000000005','Tippu@gmail.com');
 Select * from AddressBook;
+
+---------UC4 - Edit existing contact using name----------
+
+update AddressBook set Address='XYZ Colony' where FirstName='Bhagya';
+update AddressBook set Address='XYZ Colony' where FirstName='Santosh';
+update AddressBook set Address='XYZ Colony' where FirstName='Vihaan';
