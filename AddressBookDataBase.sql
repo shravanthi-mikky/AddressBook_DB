@@ -58,3 +58,6 @@ Alter table AddressBook add ContactType varchar(100);
 update AddressBook set ContactType='Friend' where LastName='Mallapuram';
 update AddressBook set ContactType='Family' where LastName='Pabboji';
 Select * from AddressBook;
+ 
+--------UC10-get count by ContactType---------------------
+select Count(ContactType) from AddressBook;
