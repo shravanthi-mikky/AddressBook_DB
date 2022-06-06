@@ -29,3 +29,8 @@ Select * from AddressBook;
 update AddressBook set Address='XYZ Colony' where FirstName='Bhagya';
 update AddressBook set Address='XYZ Colony' where FirstName='Santosh';
 update AddressBook set Address='XYZ Colony' where FirstName='Vihaan';
+
+---------UC5 - Delete Contact using name-----------
+Insert into AddressBook Values ('abc','xyz','ABC Colony','Temple Alwal','Telangana',500010,'9000000005','abc@gmail.com');
+
+Delete From AddressBook where FirstName = 'abc';
